@@ -23,7 +23,7 @@ public class PostBaseWebView extends WebView {
     private PostCardWebViewClient postCardWebViewClient;
     private OnWebViewListener onWebViewListener;
     private  PostCardWebChromeClient postCardWebChromeClient;
-
+    length
     public void setOnWebViewListener(OnWebViewListener onWebViewListener) {
         this.onWebViewListener = onWebViewListener;
         postCardWebChromeClient.setOnWebViewListener(onWebViewListener);

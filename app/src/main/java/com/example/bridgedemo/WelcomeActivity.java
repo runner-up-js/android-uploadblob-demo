@@ -17,9 +17,9 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ApplicationData.getInstance().init(getApplication());
-        Intent intent = new Intent(ApplicationData.globalContext, BrowserActivity.class);
+        Intent intent = new Intent(getApplication(), BrowserActivity.class);
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
-        intent.putExtra(BrowserActivity.URL_TAG,  "http://10.253.105.21:8080/#/?pid=0&cid=1");
-        ApplicationData.globalContext.startActivity(intent);
+        intent.putExtra(BrowserActivity.URL_TAG,  "http://10.253.105.21:8080");
+        startActivity(intent);
     }
 }
